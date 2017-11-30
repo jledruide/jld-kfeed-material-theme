@@ -3,13 +3,13 @@ jld-kfeed-material-theme
 
 A kriss_feed theme inspired by material design
 
-Author: Janusz <janusz@ledruide.net>
+Author: Janusz (<janusz@ledruide.net>)
 
 ## Description
 
-A simple clean and personal theme for kriss-feed ( https://github.com/tontof/kriss_feed ),
-based on the default kriss_feed theme
-and inspired to the Material Google design.
+A simple clean and personal theme for kriss-feed (https://github.com/tontof/kriss_feed),
+based on the default and grey kriss_feed theme
+and inspired by Material Google design.
 Works on Desktop and smartphone.
 
 More information about [KrISS feed](http://tontof.net/kriss/feed).
