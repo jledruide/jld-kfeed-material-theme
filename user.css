@@ -1,0 +1,590 @@
+/* 
+ * Userstyle to personalize KrISS feed
+ * Reference    : grey.css
+ * Inspiration  : Material Design
+ * 
+ * @author  : Janusz <janusz@ledruide.net>
+ * @date    : 2017-10-13
+ * @rev     : 1.0
+ * 
+ * 
+ * Release note :
+ * - Apply material design inspiration
+ * - responsible (smartphone study)
+ * 
+ */
+
+
+body {
+	background: #EEE;
+    font: normal 1em/1.4 "Open Sans", "Droid Sans", "Noto Sans", Camphor, Calibri, Verdana, sans-serif;
+}
+
+html, body {
+    overflow: initial;
+}
+
+.full-height {
+    overflow: auto;
+}
+
+.row-fluid {
+    margin: 0 auto;
+/*
+    padding-bottom: 4em;
+*/
+    width: 100%;
+}
+
+.row-fluid .span4 {
+    width: 100%;
+}
+
+.row-fluid .span3 {
+    width: auto;
+}
+
+.row-fluid .span6 {
+    width: 100%;
+    margin: auto;
+}
+
+.row-fluid .span9 {
+    width: 76%;
+}
+
+.row-fluid .span12 {
+    width: 100%;
+}
+
+.row-fluid .offset3 {
+    margin: 0 auto 4em;
+}
+
+.row-fluid .offset4 {
+    margin-left: 0;
+}
+
+.container-fluid:not(#index) {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#section,
+.form-horizontal,
+.unstyled {
+    width: 52em;
+    margin: 0 auto;
+}
+
+#minor-container {
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.12), 0px 4px 4px 0px rgba(0,0,0,0.24);
+    overflow: auto;
+}
+
+#status {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: .5em .8em;
+    border-top: 1px solid #ddd;
+    background: #FFF;
+    z-index: 1;
+    font-size: .7em;
+    height: 1.8em;
+}
+
+#login .form-horizontal {
+    width: 300px;
+}
+
+#paging-up,
+#paging-down {
+    display: flex;
+    width: 100%;
+    margin: 1em auto;
+}
+
+#paging-down {
+    margin-bottom: 4em;
+}
+
+#paging-up .inline,
+#paging-down .inline {
+    margin: auto;
+}
+
+
+
+#list-items {
+    margin: auto;
+    padding: 0;
+}
+
+#list-items li.item-expanded {
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12),0px 2px 2px 0px rgba(0,0,0,0.24);
+    max-width: 52em;
+}
+
+
+
+.container {
+    padding: .2em .6em;
+}
+
+li.item-list {
+    background: #FFF;
+}
+
+li.item-list + .current {
+    z-index: 2;
+}
+
+li.item-list .dl-horizontal,
+li.item-list .item-toggle {
+    padding: .5em 1em;
+    font-size: .9em;
+}
+
+.read {
+    opacity: 0.5;
+}
+
+.dl-horizontal dt {
+    text-align: left;
+}
+
+dt, dd {
+    line-height: 1.4;
+}
+
+
+.current .item-title {
+    font-weight: normal;
+}
+
+.well {
+    width: 46em;
+    margin: auto;
+    padding: 1em 0 2em;
+    border-radius: 0;
+}
+
+.well .item-title {
+    text-align: center;
+    margin: 1em 0 .5em;
+    font: normal 1.3em/1.3 "Noto Sans", "Droid Sans", "Open Sans", Camphor, Calibri, Verdana, sans-serif;
+}
+
+.well .item-title a.item-shaarli,
+.well .item-title a.item-mark-as,
+.well .item-title a.item-starred {
+    display: none !important;
+}
+
+.well .item-info-end {
+    font-size: .8rem;
+    color: #555;
+}
+
+.well .item-xml .ico {
+    vertical-align: bottom;
+}
+
+.well article img {
+    border-radius: 4px;
+}
+
+.well article img.size-large {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+.well .item-content {
+    margin: 2em 0;
+    font: normal 1em/1.6 "Droid Sans", "Noto Sans", "Open Sans", "Camphor", "Calibri", "Verdana", Ubuntu, sans-serif;
+}
+
+.well article hr {
+    border: 0;
+    border-bottom: 1px dashed #CCC; 
+    background: #999;
+}
+
+
+
+
+fieldset {
+    margin: 1.4em 1em 1em;
+    padding: 1em 1.5em;
+    background: #FFF;
+    border: 0;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.12), 0px 4px 4px 0px rgba(0,0,0,0.24);
+}
+
+legend {
+    background: #FFF;
+    padding: .4em .8em;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24)
+}
+
+.form-horizontal .control-label {
+    float: none;
+    width: auto;
+    padding-top: 5px;
+    text-align: left;
+}
+.form-horizontal .controls {
+    margin-left: 0;
+    width: 100%;
+}
+
+.form-horizontal .control-group {
+    width: 100%;
+}
+
+ul.unstyled {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+ul.unstyled > table {
+    margin: 0 auto 1em;
+    background: #FFF;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
+}
+
+.table-striped {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 95%;
+}
+
+.table-striped th {
+    background-color: rgba(255,255,255,1) !important;
+    color: #000;
+    font-weight: bold;
+    border-bottom: .1rem solid rgba(0,0,0,.07);
+}
+
+.table-striped td {
+    border-top: .1rem solid rgba(0,0,0,.07);
+    vertical-align: top;
+}
+
+.table-striped th,
+.table-striped td {
+    padding: .5rem 1.1rem;
+    line-height: 1.5;
+    text-align: left;
+    vertical-align: top;
+    border-top: .1rem solid rgba(0,0,0,.07);
+    background: #FFF;
+    font-size: .9em;
+
+}
+
+.table-striped tr:first-child th,
+.table-striped tr:first-child td{
+    border-top: 0;
+}
+
+.table-striped tr:last-child td{
+    border-bottom: .1rem solid rgba(0,0,0,.07);
+}
+
+.table-striped tbody > tr:nth-child(2n+1) > td,
+.table-striped tbody > tr:nth-child(2n+1) > th {
+    background-color: inherit;
+}
+
+li.feed {
+    margin: 4px 0;
+    padding: 4px 2px;
+}
+
+li.folder > h4,
+li.folder > h5 {
+    border: 0;
+}
+
+li.feed.has-unread {
+    font-weight: normal;
+}
+
+.label,
+.badge {
+    margin: 0 2px;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-size: 1em;
+    line-height: 1;
+    background-color: #70c572;
+    color: #FFF;
+    font-weight: normal;
+}
+
+.ico-b-disc {
+	background-color: #aaa;
+}
+
+.well,
+.navbar {
+    border: 0px;
+    background-color: #fff;
+}
+
+.btn, button {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    min-width: 2em;
+    margin: 0 0 0 -1px;
+    padding: .35em .5em;
+    border-radius: 0;
+    background: #FEFEFE;
+    border: 1px solid #CCC;
+    font-size: .9rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.btn:hover,
+button:hover {
+    background: #DDD;
+    text-decoration: none;
+    color: #000;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 95%;
+    height: 22px;
+    padding: 5px;
+    background: #FEFEFE;
+    border: 1px solid #CCC;
+}
+
+.input-by-page {
+    margin: -.6em 0;
+}
+
+.btn-group {
+    background: #FFF;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
+}
+
+.input-mini {
+    width: 24px !important;
+    vertical-align: bottom !important;
+}
+
+
+.navbar .btn-navbar {
+    display: block;
+    margin: 3px 0 !important;
+    padding: 0 !important;
+    float: right;
+    cursor: pointer;
+    border: 0;
+    font-size: 12px;
+    line-height: 24px;
+    text-indent: -9999px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAVElEQVRIie2SQQoAIQzE4j5UW1/iz/Uiy6LXFnRpoNcOhEBwCglQoBmdzp8vCnTjk++AOAzkVVExVJRXRffzABXHiirOFXlkulUkhoqioqgoKvoVA2ZntpmlWlSxAAAAAElFTkSuQmCC') no-repeat;
+}
+
+.navbar {
+    border-radius: 0;
+    margin: 14px 18px;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
+}
+
+.navbar .nav {
+    display: none;
+}
+
+#config .navbar .nav,
+#edit-all .navbar .nav {
+    display: block;
+}
+
+.in > .nav {
+    display: block;
+}
+
+.navbar .brand,
+.nav-collapse.collapse {
+    font-size: .9em;
+    line-height: 1.4em;
+    padding-bottom: 10px;
+}
+
+#nav-home,
+.navbar .brand {
+	padding: 5px 5px;
+}
+
+.navbar .nav > li > a {
+	padding: 5px 0 0 5px;
+}
+
+.navbar .nav > li > a::after {
+	content: " \00b7";
+	
+}
+
+.navbar .nav > li:last-child > a:after {
+	content: none;
+}
+
+.ico-home::before {
+    content: "";
+}
+.ico-home::after {
+    margin: 0 10px 0 0;
+    padding: 0 0 10px 26px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAYCAYAAAD3Va0xAAABBUlEQVQ4je3STyvEURTG8U82shQbf3begLKYLZFslK3sRTNqlmokFmo2ysJO2cnGG1CUWXgNyguQwkrU1IyxcKau8RvzK0vz1FP3nvPc7+3cLn39VQMoYjPWMIO98HQeyBAu0AqfYxDlpFbqBRnFbYTvwi3UsJ8XNIX7CN6gEK5FrZkHVMBThM6wgBc8Yz7Ga+kBWsF7BA6whnpyqI5VVJPabidkCx9oYB2VjptTb2MjRmzGGhxG4BXLOP0F0vZJTPAW+6p4xAfM4ioHpO1LzOER1zCCcd//R16XMInh9J26gRrhbqAfygIdJf3j/wUqZoEmfH3EncSLSX+po1fBWBaor2x9Aua6nZlo8FUvAAAAAElFTkSuQmCC') no-repeat left -4px;
+    content: " Accueil";
+}
+
+
+.item-expanded {
+    margin: 1em auto;
+	color: #888;
+	background-color: #FFF;
+    border: 0;
+}
+
+.current {
+	color: #000 !important;
+	background-color: #fff !important;
+}
+
+#list-feeds {
+	margin: 1em;
+}
+
+.folder {
+	margin: 15px 0;
+}
+
+a:hover {
+    color: #888;
+    text-decoration: none;
+}
+
+
+
+
+@media (max-width: 767px) {
+    
+    body {
+        background: #fff;
+    }
+    
+    #status {
+        right: 0;
+    }
+    
+    #paging-up,
+    #paging-down {
+        display: none;
+    }
+    
+    .navbar {
+        margin: 0 0 1em;
+    }
+    
+    .navbar, 
+    #list-items {
+        max-width: 100%;
+    }
+    
+    .navbar .btn-navbar {
+        margin: 2px !important;
+        padding: 0 5px !important;
+        float: right;
+        font-size: 1em;
+        border-radius: 4px;
+    }
+    
+    .item-title {
+        text-align: center;
+        font: normal 1.1em/1.3 "Noto Sans", "Droid Sans", "Open Sans", Camphor, Calibri, Verdana, sans-serif;
+    }
+    
+    #list-items li.item-expanded {
+        margin: 1em;
+        padding: 1em;
+    }
+    
+    li.item-list .dl-horizontal {
+        padding: 0 5px;
+    }
+    
+    li.item-list .item-toggle {
+        padding: .5em;
+    }
+    
+    .dl-horizontal dt,
+    .dl-horizontal dd {
+        padding: 5px;
+    }
+    
+    .item-info-end {
+        height: auto;
+        padding: 0;
+        width: auto;
+        white-space: inherit;
+    }
+    
+    .item-info-end.item-info-time,
+    .item-info-end.item-info-author {
+        text-align: center;
+    }
+    
+    .item-top > .label,
+    .item-shaarli > .label,
+    .item-starred > .label,
+    .item-mark-as > .label {
+        display: inline-block;
+        float: none;
+        margin: .1em .2em;
+        padding: 2px 10px;
+        line-height: 1.5;
+        text-align: center;
+        border-radius: 2px !important;
+    }
+    
+    .item-title {
+        line-height: 1.6;
+    }
+    
+    .well {
+        width: auto;
+        padding: 0;
+    }
+    
+    article ul {
+        padding-left: 1em;
+    }
+    
+    .well article img.size-large {
+        width: 100%;
+    }
+    
+    .ico-toggle-item {
+        float: right;
+    }
+    
+    .item-toggle-plus {
+        text-indent: -9999px !important;
+        padding: 5px 10px !important;
+        width: 25px;
+    }
+    
+}
