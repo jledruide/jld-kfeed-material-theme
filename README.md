@@ -22,8 +22,7 @@ To install, simply put the `user.css` file in your krissfeed's `/inc` folder.
 
 ## Licence
 
-Like [KrISS feed](http://tontof.net/kriss/feed),
-
+Like [KrISS feed](http://tontof.net/kriss/feed) licence,
 Copyleft (ɔ) - Janusz <janusz@ledruide.net>
 
 [Free software means users have the four essential freedoms](http://www.gnu.org/philosophy/philosophy.html):
